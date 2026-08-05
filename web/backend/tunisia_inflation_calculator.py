@@ -8,7 +8,7 @@ import sys
 from datetime import datetime
 import re
 
-from logger_config import get_application_logger, setup_statement_logger
+from .logger_config import get_application_logger, setup_statement_logger
 
 # Module logger
 logger = get_application_logger('calculator')
