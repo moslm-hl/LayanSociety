@@ -291,9 +291,20 @@ def generate_pdf_report(report_type: str, data: dict, username: str, account_num
     
     story = []
     
-    # Header
-    story.append(Paragraph("LAYAN SOCIETY FOR COST CALCULATION", title_style))
-    story.append(Paragraph("AND RISK ESTIMATION", title_style))
+    # Header with background
+    header_table = Table([["LAYAN SOCIETY FOR COST CALCULATION AND RISK ESTIMATION"]], colWidths=[6*inch])
+    header_table.setStyle(TableStyle([
+        ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor('#5B38AB')),
+        ('TEXTCOLOR', (0, 0), (-1, -1), colors.white),
+        ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+        ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+        ('FONTNAME', (0, 0), (-1, -1), 'Helvetica-Bold'),
+        ('FONTSIZE', (0, 0), (-1, -1), 18),
+        ('PADDING', (0, 0), (-1, -1), 15),
+        ('TOPPADDING', (0, 0), (-1, -1), 12),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 12),
+    ]))
+    story.append(header_table)
     story.append(Spacer(1, 0.2*inch))
     
     # Report title based on type
