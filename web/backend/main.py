@@ -46,6 +46,13 @@ app.add_middleware(
 )
 
 
+# Root endpoint for health checks
+@app.get("/")
+async def root():
+    """Health check endpoint."""
+    return {"status": "healthy", "message": "LayanSociety API is running"}
+
+
 # Pydantic models for request/response
 class InflationRequest(BaseModel):
     amount: float
