@@ -292,8 +292,7 @@ def generate_pdf_report(report_type: str, data: dict, username: str, account_num
     story = []
     
     # Header
-    story.append(Paragraph("LAYAN SOCIETY FOR COST CALCULATION", title_style))
-    story.append(Paragraph("AND RISK ESTIMATION", title_style))
+    story.append(Paragraph("LAYAN SOCIETY FOR COST CALCULATION AND RISK ESTIMATION", title_style))
     story.append(Spacer(1, 0.2*inch))
     
     # Report title based on type
