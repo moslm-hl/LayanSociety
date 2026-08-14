@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { TrendingUp, ArrowRight, Download } from 'lucide-react';
 import axios from 'axios';
 
-const API_URL = '/api';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
 
 function GDPCalculator({ isDarkMode }) {
   const [initialGdp, setInitialGdp] = useState('');

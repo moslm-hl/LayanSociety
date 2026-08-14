@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { DollarSign, ArrowRight, Download } from 'lucide-react';
 import axios from 'axios';
 
-const API_URL = '/api';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
 
 function CurrencyConverter({ isDarkMode }) {
   const [amount, setAmount] = useState('');

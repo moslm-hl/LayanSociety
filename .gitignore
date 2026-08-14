@@ -63,3 +63,9 @@ web/frontend/.env.production.local
 *.bak
 *.backup
 *~
+
+
+
+STRATEGIC_GROWTH_PLAN.md
+web/ENVIRONMENT_VARIABLES_GUIDE.md
+web/README.md
