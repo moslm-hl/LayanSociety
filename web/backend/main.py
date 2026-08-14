@@ -261,7 +261,7 @@ def generate_pdf_report(report_type: str, data: dict, username: str, account_num
         'CustomTitle',
         parent=styles['Heading1'],
         fontSize=24,
-        textColor=colors.HexColor('#6B46C1'),
+        textColor=colors.HexColor("#5B38AB"),
         spaceAfter=30,
         alignment=TA_CENTER
     )
@@ -293,7 +293,7 @@ def generate_pdf_report(report_type: str, data: dict, username: str, account_num
     
     # Header
     story.append(Paragraph("LAYAN SOCIETY FOR COST CALCULATION", title_style))
-    story.append(Paragraph("AND RISK ESTIMATION", subtitle_style))
+    story.append(Paragraph("AND RISK ESTIMATION", title_style))
     story.append(Spacer(1, 0.2*inch))
     
     # Report title based on type
