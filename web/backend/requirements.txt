@@ -4,3 +4,5 @@ pydantic>=2.10.0
 python-multipart>=0.0.6
 pydantic-core>=2.27.0
 reportlab>=4.0.0
+numpy>=1.24.0
+scipy>=1.10.0
